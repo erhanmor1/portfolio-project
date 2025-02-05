@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: linear-gradient(90deg, #ff0099, #493240, #00ffcc, #ffcc00);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    color: #ffcc00;
+}
+
+.sidebar p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.sidebar nav {
+    margin-top: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar nav a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.project:hover {
+    background: #ffcc00;
+    color: black;
+    transition: 0.3s;
+}
